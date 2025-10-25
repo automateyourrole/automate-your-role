@@ -4,25 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Automate Your Role — Automating tasks one script at a time</title>
-  <meta name="description" content="AYR publishes simple, reliable scripts and playbooks for busy people." />
+  <meta name="description" content="AYR publishes simple, reliable scripts and playbooks for small businesses, freelancers, and teams." />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Automate Your Role">
+  <meta property="og:description" content="Automating tasks one script at a time.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.automateyourrole.com/assets/img/og.jpg">
   <link rel="stylesheet" href="assets/css/ayr.css">
 </head>
 <body>
   <header class="wrap nav">
-    <strong>AYR</strong>
-    <nav><a href="/scripts/">Scripts</a> · <a href="/newsletter/">Newsletter</a> · <a href="/about/">About</a></nav>
+    <a class="brand" href="/"><img src="/assets/img/wordmark.svg" alt="AYR" height="24"></a>
+    <nav class="menu">
+      <a href="/scripts/">Scripts</a>
+      <a href="/playbooks/">Playbooks</a>
+      <a href="/newsletter/">Newsletter</a>
+      <a href="/about/">About</a>
+    </nav>
   </header>
 
-  <main class="wrap hero">
-    <h1>Automate Your Role</h1>
-    <p class="sub">Automating tasks one script at a time.</p>
-    <p>
-      <a class="btn primary" href="/newsletter/">Get the Starter Pack</a>
-      <a class="btn ghost" href="/scripts/">Browse Scripts</a>
-    </p>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Automate Your Role</h1>
+        <p class="sub">Automating tasks one script at a time.</p>
+        <div class="cta">
+          <a class="btn primary" href="/newsletter/">Get the Starter Pack</a>
+          <a class="btn ghost" href="/scripts/">Browse Scripts</a>
+        </div>
+        <div class="chips">
+          <span class="tag">PowerShell</span><span class="tag">Bash</span><span class="tag">Python</span>
+          <span class="tag">Windows</span><span class="tag">macOS</span><span class="tag">Cloud</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>What you get</h3>
+        <ul>
+          <li>Five copy-paste scripts with 60-second guides</li>
+          <li>Rollback and troubleshooting steps</li>
+          <li>Playbooks for backups, reporting, and sync</li>
+        </ul>
+        <div class="kpis">
+          <div><strong>1 min</strong><span>per setup</span></div>
+          <div><strong>0$</strong><span>to start</span></div>
+          <div><strong>100%</strong><span>local control</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid3">
+      <article class="card">
+        <h4>Auto-archive invoices to Drive</h4>
+        <p class="muted">Python · Cross-platform</p>
+        <a class="link" href="/playbooks/">View playbook →</a>
+      </article>
+      <article class="card">
+        <h4>Bulk rename + version files</h4>
+        <p class="muted">PowerShell · Windows</p>
+        <a class="link" href="/scripts/">Get script →</a>
+      </article>
+      <article class="card">
+        <h4>Daily CSV → Google Sheets</h4>
+        <p class="muted">Bash · macOS/Linux</p>
+        <a class="link" href="/scripts/">Get script →</a>
+      </article>
+    </section>
+
+    <section class="cta-band">
+      <h3>Start with the AYR Starter Pack</h3>
+      <p class="muted">Five proven automations you can deploy today.</p>
+      <a class="btn primary" href="/newsletter/">Email me the pack</a>
+    </section>
   </main>
 
-  <footer class="wrap footer">© <span id="y"></span> Automate Your Role</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <img src="/assets/img/wordmark.svg" alt="AYR" height="20"><br>
+        <small>© <span id="y"></span> Automate Your Role</small>
+      </div>
+      <nav>
+        <a href="/scripts/">Scripts</a>
+        <a href="/playbooks/">Playbooks</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
